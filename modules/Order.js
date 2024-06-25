@@ -5,9 +5,9 @@ const Product = require("./Product")
 
 const orderScheme = new mongoose.Schema({
     _id : Number,
-    customer_details :{type:mongoose.Schema.Types.ObjectId,ref:User},
+    customer_details :{type:Number,ref:User},
     order_date : Date,
-    product_details: {type:mongoose.Schema.Types.ObjectId,ref:Product},
+    product_details: {type:Number,ref:Product},
     quantity : Number,
     total_amount : Number,
     order_status : String
